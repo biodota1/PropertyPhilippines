@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Hero />
       <FeaturedText />
-      <h2 className="px-[5%] text-2xl md:text-3xl font-bold pb-5">
+      <h2 className="px-[5%] lg:px-[7%] text-2xl md:text-3xl font-bold pb-5">
         Featured Properties
       </h2>
       <FeaturedProperties />

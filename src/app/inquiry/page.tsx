@@ -17,7 +17,7 @@ export default function Inquiry() {
     e.preventDefault();
 
     try {
-      const res = await fetch("/api/sendEmail", {
+      const res = await fetch("/api/sendInquiry", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

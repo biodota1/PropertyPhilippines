@@ -1,9 +1,23 @@
 import nodemailer from "nodemailer";
+import { NextRequest } from "next/server";
 
-export async function POST(req) {
+interface ContactRequestBody {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  message: string;
+}
+
+export async function POST(req: NextRequest): Promise<Response> {
   // Get the data from the request body
-  const { firstName, lastName, email, phoneNumber, interest, type } =
-    await req.json();
+  const {
+    firstName,
+    lastName,
+    email,
+    phoneNumber,
+    message,
+  }: ContactRequestBody = await req.json();
 
   // Create a Nodemailer transporter object using Hostinger SMTP settings
   const transporter = nodemailer.createTransport({
@@ -21,20 +35,20 @@ export async function POST(req) {
     await transporter.sendMail({
       from: '"Property Philippines" <support@propertyphilippines.net>', // Sender's address
       to: "jamesmyertaneo@gmail.com", // Recipient's address
-      subject: `${type}`,
+      subject: "PROPERTY INQUIRY",
       text: `
         First Name: ${firstName}
         Last Name: ${lastName}
         Email: ${email}
         Phone Number: ${phoneNumber}
-        Property of Interest: ${interest}
+        Message: ${message}
       `,
       html: `
         <p><strong>First Name:</strong> ${firstName}</p>
         <p><strong>Last Name:</strong> ${lastName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone Number:</strong> ${phoneNumber}</p>
-        <p><strong>Property of Interest:</strong> ${interest}</p>
+        <p><strong>Message:</strong> ${message}</p>
       `,
     });
 

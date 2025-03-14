@@ -1,18 +1,26 @@
 import Image from "next/image";
-import property_image from "@images/hero-background.jpg";
 import { Button } from "@mui/material";
+import { Property } from "@/data/properties";
 
-export default function PropertyCard() {
+interface PropertyProps {
+  property: Property;
+}
+
+const PropertyCard: React.FC<PropertyProps> = ({ property }) => {
   return (
-    <div className="h-[380px] md:w-[300px] flex flex-col gap-2">
-      <Image className="h-[500px] md:w-[300px]" src={property_image} alt="" />
-      <h2 className="text-2xl font-bold">SKYRIZE RESIDENCE</h2>
-      <h3 className="text-lg font-semibold">Lahug,Cebu City</h3>
-      <h4 className="text-md">
-        Centrally located on P. Basubas Street, Tipolo, Mandaue City—quick
-        access to key areas, ideal for urban living.
-      </h4>
+    <div className="h-[500px] md:h-[500px] md:w-[350px] flex flex-col gap-2 ">
+      <Image
+        className="h-[400px]"
+        src={property.imageSrc}
+        alt={property.imageAlt}
+      />
+      <p className="text-2xl font-bold">{property.name}</p>
+      <p className="text-lg font-semibold">Available: {property.available}</p>
+      <p className="text-md font-semibold">Location: {property.location}</p>
+      <p>{property.description}</p>
       <Button variant="contained">More Details</Button>
     </div>
   );
-}
+};
+
+export default PropertyCard;
