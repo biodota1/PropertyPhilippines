@@ -8,11 +8,11 @@ export default function SocialConnect() {
     <div className="flex min-h-screen w-full items-center gap-16 px-[5%]">
       <div className="w-[700px] flex flex-col gap-5">
         <h1 className="text-2xl md:text-4xl font-bold">
-          Discover Your Perfect Home Today!
+          Discover Your Perfect Home Today.
         </h1>
         <h2 className="md:text-xl font-bold">
-          Get in touch with us today to begin your inquiry – we're here to
-          support you every step of the way!
+          Get in touch with us today to begin your inquiry were here to support
+          you every step of the way.
         </h2>
         <h3 className="font-bold">
           Unlock the door to your dream property with our comprehensive real

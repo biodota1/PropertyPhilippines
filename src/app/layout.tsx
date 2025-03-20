@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://propertyphilippines.net"),
   title: "Property Philippines - Real Estate in Cebu and the Philippines",
   description:
     "Explore the best real estate opportunities in Cebu and the Philippines. Find your dream property with expert guides on buying homes, condos, and land.",

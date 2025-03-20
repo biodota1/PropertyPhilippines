@@ -9,22 +9,22 @@ export default function Footer() {
           <h1 className="text-lg pb-2">About Site</h1>
           <p className="text-sm md:w-[400px]">
             We are inviting you to consider me in your real estate journey
-            whether you rent, sell or buy a property. We're looking forward to
+            whether you rent, sell or buy a property. Were looking forward to
             assisting you one day and find the best investment according to your
-            preference!
+            preference.
           </p>
         </div>
         <div className="font-bold">
           <h1 className="text-lg pb-2">Quick Links</h1>
           <ul>
             <li>
-              <Link href="about">Abous us</Link>
+              <Link href="/about">Abous us</Link>
             </li>
             <li>
-              <Link href="contact">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </li>
             <li>
-              <Link href="inquire">Inquire</Link>
+              <Link href="/inquire">Inquire</Link>
             </li>
           </ul>
         </div>
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="font-semibold my-5">Copyright © 2025 Micasa.com</div>
+      <div className="font-semibold my-5">Copyright 2025 Micasa.com</div>
     </div>
   );
 }

@@ -21,6 +21,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@images/*": ["./public/*"],
+      "@propertyImg/*": ["./public/property_images/*"],
+      "@eastgateUnit/*": ["./public/east_gate_units/*"],
       "@components/*": ["./src/app/components/*"],
       "@data/*": ["./src/data/*"]
     }

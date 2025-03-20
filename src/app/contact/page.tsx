@@ -30,8 +30,10 @@ export default function Contact() {
         setStatus("Error sending email.");
       }
     } catch (error) {
+      console.log(error);
       setStatus("Error sending email.");
     }
+    console.log(status);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

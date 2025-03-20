@@ -32,7 +32,9 @@ export default function Inquiry() {
       }
     } catch (error) {
       setStatus("Error sending email.");
+      console.log(error);
     }
+    console.log(status);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
