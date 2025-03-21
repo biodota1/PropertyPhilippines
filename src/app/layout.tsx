@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description:
     "Explore the best real estate opportunities in Cebu and the Philippines. Find your dream property with expert guides on buying homes, condos, and land.",
   keywords:
-    "real estate, Cebu real estate, Philippines property, Cebu homes for sale, property investment Philippines, condos for sale Cebu, buy property Cebu, land for sale Philippines, real estate agents Cebu, investment properties Philippines",
+    "Properties For Sale in Cebu ,Condos for Sale in Cebu , real estate, Cebu real estate, Philippines property, Cebu homes for sale, property investment Philippines, condos for sale Cebu, buy property Cebu, land for sale Philippines, real estate agents Cebu, investment properties Philippines",
   robots: "index, follow",
   openGraph: {
     title: "Property Philippines - Real Estate in Cebu and the Philippines",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "URL_to_image.jpg", // Replace with actual image URL
+        url: "../../public/hero-background.jpg", // Replace with actual image URL
         alt: "Property Philippines",
       },
     ],
